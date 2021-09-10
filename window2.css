@@ -18,12 +18,14 @@ body {
     margin: 0 3% 1% 3%;
     border-radius: 15px;
     outline: cornflowerblue;
+    border: 0.1em solid #0F1C3F !important;
   }
    
   .card img{
     height: 310px;
     width: 260px;
     outline: cornflowerblue;
+    margin-left: 10%;
   }
   
   .cardsty {margin: 0 -5px;
@@ -54,6 +56,93 @@ body {
   font-weight:500;
   display: inline-block;
   margin: 0 3% 0 3%;
+}
+
+.circ:focus{
+outline: #09dafa;
+}
+
+
+.circ2 {
+  border: 0.1em solid #0F1C3F !important;
+  border-radius: 50%; 
+  height: 3.5em;
+  width: 3.5em;
+  font-size: 16px;
+  font-weight:500;
+  display: inline-block;
+  margin: 0 3% 0 0;
+  background-color: white !important;
+ 
+}
+
+.circ2:focus {
+  border: 0.1em solid #0F1C3F !important;
+  border-radius: 50%; 
+  height: 3.5em;
+  width: 3.5em;
+  font-size: 16px;
+  font-weight:500;
+  display: inline-block;
+  margin: 0 3% 0 0;
+  background-color: rgb(221, 221, 221) !important;
+outline: none;
+}
+
+.btnc1:focus{
+  background-color: #555555;
+}
+
+.card:focus{
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+
+  margin: 0 3% 1% 3%;
+  border-radius: 15px;
+  outline: cornflowerblue;
+  border: 0.1em solid #0F1C3F !important;
+  background-color: rgb(221, 221, 221) !important;
+  outline: none;
+}
+
+
+.contbtn{
+  display: inline-block;
+  margin-left: 0em;
+  margin-top: 0em;
+  margin-bottom: 0mm;
+}
+
+.cbtn {
+  border: none;
+  color: white;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.btnb {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.btnb:hover {
+  background-color: #252525;
+  color: white;
+}
+
+.cbtn:focus {
+
+  outline: none;
+  background-color: #252525;
+  color: white;
+
 }
 
 
@@ -167,6 +256,26 @@ input[type=number]:focus {
         border-radius: 15px;
 
       }
+      .circ {
+        border: 0.1em solid #0F1C3F !important;
+        border-radius: 50%;
+        height: 3.5em;
+        width: 3.5em;
+        font-size: 16px;
+        font-weight:500;
+        display: inline-block;
+        margin: 0 0.8% 0 0.8%;
+      }
       
+      .contbtn{
+        display: inline-block;
+        margin-left: 0em;
+        margin-top: 1em;
+        margin-bottom: 2em;
+      }
+      
+
+
+
 
  }

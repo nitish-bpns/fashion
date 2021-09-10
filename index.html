@@ -29,44 +29,44 @@
 
             <div class="btnc1" style="margin-left: 4%;">
 
-                <div class="card" id="blue" onclick="colorFunction()">
-                    <center>
-                        <img src="assets/images/bl.png">
-                    </center>
-                    <div class="container">
-                        <h4>
-                            <center>Blue</center>
-                        </h4>
-                    </div>
+                <div class="btnc1">
+                    <button class="card" id="blue" onclick="blueFunction()">
+                        <center>
+                            <img src="assets/images/bl.png">
+                        </center>
+                        <div class="container">
+                            <h4>
+                                <center>Blue</center>
+                            </h4>
+                        </div>
+                    </button>
                 </div>
-            </div>
 
-            <div class="btnc1">
-                <div class="card" id="black" onclick="blackFunction()">
-                    <center>
-                        <img src="assets/images/bj.png">
-                    </center>
-                    <div class="container">
-                        <h4>
-                            <center>Black</center>
-                        </h4>
-
-                    </div>
+                <div class="btnc1">
+                    <button class="card" id="Black" onclick="blackFunction()">
+                        <center>
+                            <img src="assets/images/bj.png">
+                        </center>
+                        <div class="container">
+                            <h4>
+                                <center>Black</center>
+                            </h4>
+                        </div>
+                    </button>
                 </div>
-            </div>
 
-            <div class="btnc1">
-                <div class="card" id="white" onclick="whiteFunction()">
-                    <center>
-                        <img src="assets/images/wt.png">
-                    </center>
-                    <div class="container">
-                        <h4>
-                            <center>White</center>
-                        </h4>
-                    </div>
+                <div class="btnc1">
+                    <button class="card" id="white" onclick="whiteFunction()">
+                        <center>
+                            <img src="assets/images/wt.png">
+                        </center>
+                        <div class="container">
+                            <h4>
+                                <center>White</center>
+                            </h4>
+                        </div>
+                    </button>
                 </div>
-            </div>
 
 
         </center>
@@ -74,28 +74,31 @@
     <br>
 
     <center>
-        <div class="circ" onclick="sFunction()">
-            <p style="margin-top: 25%;">S</p>
-        </div>
-        <div class="circ" onclick="mFunction()">
-            <p style="margin-top: 25%;">M</p>
-        </div>
-        <div class="circ" onclick="lFunction()">
-            <p style="margin-top: 25%;">L</p>
-        </div>
-        <div class="circ" onclick="xlFunction()">
-            <p style="margin-top: 25%;">XL</p>
-        </div>
-        <div class="circ" onclick="xxlFunction()">
-            <p style="margin-top: 25%;">XXL</p>
-        </div>
+        <button class="circ2" onclick="sFunction()">
+            <p style="margin-top: 32%;">S</p>
+        </button>
+        <button class="circ2" onclick="mFunction()">
+            <p style="margin-top: 32%;">M</p>
+        </button>
+        <button class="circ2" onclick="lFunction()">
+            <p style="margin-top: 32%;">L</p>
+        </button>
+        <button class="circ2" onclick="xlFunction()">
+            <p style="margin-top: 32%;">XL</p>
+        </button>
+        <button class="circ2" onclick="xxlFunction()">
+            <p style="margin-top: 32%;">XXL</p>
+        </button>
 
         <!-- Button trigger modal -->
+        <div class="contbtn">
 
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
-            style="margin-left: 5%!important;">
-            Continue
-        </button>
+            <button class="cbtn btnb" data-toggle="modal" data-target="#exampleModal">Black</button>
+
+            <!-- <button class="circ2" data-toggle="modal" data-target="#exampleModal" style="margin-left: 5%!important;">
+                Continue
+            </button> -->
+        </div>
     </center>
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -134,6 +137,7 @@
             </div>
         </div>
     </div>
+
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
