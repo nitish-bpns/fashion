@@ -28,144 +28,10 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
-
-
-
-
-</head>
-
-<body>
-    <button class="btn2"><a style=" text-decoration: none; color: black; " href="https://www.avalipt.com/">
-            ◄ Back</a>
-    </button>
-
-    <br>
-    <div class="cardsty">
-        <center>
-            <p
-                style="color: rgb(0, 0, 0);font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-align: center; margin:0  5% 0 5% ; ">
-                Choose the color and size of jackets
-            </p>
-            <br>
-
-            <div class="btnc1" style="margin-left: 4%;">
-
-                <div class="btnc1">
-                    <button class="card" id="blue" onclick="blueFunction()">
-                        <center>
-                            <img src="assets/images/bl.png">
-                        </center>
-                        <div class="container">
-                            <h4>
-                                <center>Blue</center>
-                            </h4>
-                        </div>
-                    </button>
-                </div>
-
-                <div class="btnc1">
-                    <button class="card" id="Black" onclick="blackFunction()">
-                        <center>
-                            <img src="assets/images/bj.png">
-                        </center>
-                        <div class="container">
-                            <h4>
-                                <center>Black</center>
-                            </h4>
-                        </div>
-                    </button>
-                </div>
-
-                <div class="btnc1">
-                    <button class="card" id="white" onclick="whiteFunction()">
-                        <center>
-                            <img src="assets/images/wt.png">
-                        </center>
-                        <div class="container">
-                            <h4>
-                                <center>White</center>
-                            </h4>
-                        </div>
-                    </button>
-                </div>
-
-
-        </center>
-    </div>
-    <br>
-
-
-    <center>
-        <button class="circ2" onclick="sFunction()">
-            <p style="margin-top: 32%;">S</p>
-        </button>
-        <button class="circ2" onclick="mFunction()">
-            <p style="margin-top: 32%;">M</p>
-        </button>
-        <button class="circ2" onclick="lFunction()">
-            <p style="margin-top: 32%;">L</p>
-        </button>
-        <button class="circ2" onclick="xlFunction()">
-            <p style="margin-top: 32%;">XL</p>
-        </button>
-        <button class="circ2" onclick="xxlFunction()">
-            <p style="margin-top: 32%;">XXL</p>
-        </button>
-
-        <!-- Button trigger modal -->
-        <div class="contbtn">
-
-            <button class="cbtn btnb" data-toggle="modal" data-target="#exampleModal">Continue</button>
-
-            <!-- <button class="circ2" data-toggle="modal" data-target="#exampleModal" style="margin-left: 5%!important;">
-                Continue
-            </button> -->
-        </div>
-    </center>
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Your details</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-
-                    <div>
-                        <form id="myForm">
-
-                            <input type="text" id="name" name="name" placeholder="Your name">
-
-                            <input type="email" id="email" name="email" placeholder="Your Email Address">
-
-
-
-                            <input type="number" id="contact" name="contact" placeholder="Your Phone Number">
-
-                            <input type="text" id="description" name="description" placeholder="Description"
-                                style="height: 80px;">
-
-                        </form>
-                        <center>
-                            <button onclick='SubForm()' class="sbtn">Submit
-                            </button>
-                        </center>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
     <script>
         function SubForm() {
             $.ajax({
-                url: "https://api.apispreadsheets.com/data/18061/",
+                url: "https://api.apispreadsheets.com/data/18076/",
                 type: "post",
                 data: $("#myForm").serializeArray(),
                 success: function () {
@@ -180,6 +46,152 @@
 
 
 
+</head>
+
+<body>
+    <button class="btn2"><a style=" text-decoration: none; color: black; " href="https://www.avalipt.com/">
+            ◄ Back</a>
+    </button>
+
+    <br>
+
+    <center>
+        <p
+            style="color: rgb(0, 0, 0);font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-align: center; margin:0  5% 0 5% ; ">
+            Choose the color and size of jackets
+        </p>
+        <br>
+
+        <form id="myForm">
+
+            <center>
+                <ul class="jkcolor">
+                    <li>
+                        <input type="radio" id="black" name="color" value="black" />
+                        <label for="black">
+                            <img src="assets/images/bj.png">
+                            <h4>Black</h4>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="blue" name="color" value="blue" />
+                        <label for="blue">
+                            <img src="assets/images/bl.png">
+                            <h4>Blue</h4>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="white" name="color" value="white" checked="checked" />
+                        <<label for="white">
+                            <img src="assets/images/wt.png">
+                            <h4>White</h4>
+                            </label>
+                    </li>
+
+                </ul>
+            </center>
+            <br>
+            <center>
+                <ul class="jksize">
+                    <li>
+                        <input type="radio" id="s" name="size" value="s" />
+                        <label for="s">
+                            <p style="margin-top: 20%;font-weight: 600;">S</p>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="m" name="size" value="m" />
+                        <label for="m">
+                            <p style="margin-top: 20%;font-weight: 600;">M</p>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="l" name="size" value="l" checked="checked" />
+                        <label for="l">
+                            <p style="margin-top: 20%;font-weight: 600;">L</p>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="xl" name="size" value="xl" />
+                        <label for="xl">
+                            <p style="margin-top: 20%;font-weight: 600;">XL</p>
+                        </label>
+                    </li>
+                    <li>
+                        <input type="radio" id="xxl" name="size" value="xxl" />
+                        <label for="xxl">
+                            <p style="margin-top: 20%;font-weight: 600;">XXL</p>
+                        </label>
+                    </li>
+                </ul>
+
+            </center>
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Your details</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <div>
+
+                                <input type="text" id="name" name="name" placeholder="Your name">
+                                <input type="text" id="email" name="email" placeholder="Your Email Address">
+                                <input type="number" id="contact" name="contact" placeholder="Your Phone Number">
+
+                                <input type="text" id="description" name="description" placeholder="Description"
+                                    style="height: 80px;">
+
+                                <!-- <input type="file" id="upload" name="upload" placeholder="Description"> -->
+
+
+        </form>
+
+        <center>
+            <button onclick='SubForm()' class="sbtn">Submit
+            </button>
+        </center>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+
+
+        <div class="contbtn">
+
+            <button class="cbtn btnb" data-toggle="modal" data-target="#exampleModal">Continue</button>
+        </div>
+
+    </center>
+
+
+    <script>
+        function SubForm() {
+            $.ajax({
+                url: "https://api.apispreadsheets.com/data/18076/",
+                type: "post",
+                data: $("#myForm").serializeArray(),
+                success: function () {
+                    alert("Form Data Submitted :)")
+                },
+                error: function () {
+                    alert("There was an error :(")
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
