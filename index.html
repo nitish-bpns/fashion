@@ -2,6 +2,20 @@
 <html lang="en">
 
 <head>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,11 +24,18 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="window2.css">
     <title>Avalipt</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+
+
+
+
 </head>
 
 <body>
-    <button class="btn2"><a style=" text-decoration: none; color: black; " href="https://www.avalipt.com/"
-            target="blank">
+    <button class="btn2"><a style=" text-decoration: none; color: black; " href="https://www.avalipt.com/">
             ◄ Back</a>
     </button>
 
@@ -73,6 +94,7 @@
     </div>
     <br>
 
+
     <center>
         <button class="circ2" onclick="sFunction()">
             <p style="margin-top: 32%;">S</p>
@@ -114,41 +136,49 @@
                 <div class="modal-body">
 
                     <div>
-                        <form action="/action_page.php">
-                            <!-- <label for="fname">Name*</label> -->
-                            <input type="text" id="fname" name="name" placeholder="Your name">
+                        <form id="myForm">
 
-                            <!-- <label for="lname">Email Address*</label> -->
-                            <input type="email" id="lname" name="lastname" placeholder="Your Email Address">
+                            <input type="text" id="name" name="name" placeholder="Your name">
 
-                            <div style="display: inline-block;"></div>
-                            <!-- <label for="lname">Phone Number*</label> -->
-                            <input type="number" id="lname" name="phone number" placeholder="Your Phone Number">
+                            <input type="email" id="email" name="email" placeholder="Your Email Address">
 
-                            <input type="text" id="fname" name="Description" placeholder="Description"
+
+
+                            <input type="number" id="contact" name="contact" placeholder="Your Phone Number">
+
+                            <input type="text" id="description" name="description" placeholder="Description"
                                 style="height: 80px;">
+
+                        </form>
+                        <center>
+                            <button onclick='SubForm()' class="sbtn">Submit
+                            </button>
+                        </center>
+
                     </div>
-
-
-                    <center> <input type="submit" value="Submit"></center>
-                    </form>
                 </div>
 
             </div>
         </div>
     </div>
 
+    <script>
+        function SubForm() {
+            $.ajax({
+                url: "https://api.apispreadsheets.com/data/18061/",
+                type: "post",
+                data: $("#myForm").serializeArray(),
+                success: function () {
+                    alert("Form Data Submitted :)")
+                },
+                error: function () {
+                    alert("There was an error :(")
+                }
+            });
+        }
+    </script>
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
 
 </body>
 

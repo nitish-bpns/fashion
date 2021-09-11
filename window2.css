@@ -181,11 +181,9 @@ input[type=email], select {
 
 }
 
-input[type=email] ::after{
-  border: #393939;
-}
 
-input[type=submit] {
+
+.sbtn{
   width: 40%;
   background-color: #ffffff;
   color: rgb(0, 0, 0);
@@ -196,7 +194,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+.sbtn:hover {
   background-color: #000000;
   color: white;
 }
@@ -324,7 +322,7 @@ input[type=number]:focus {
       }
     
       
-      input[type=submit] {
+      .sbtn {
         width: 50%;
         background-color: #ffffff;
         color: rgb(0, 0, 0);
@@ -335,7 +333,7 @@ input[type=number]:focus {
         cursor: pointer;
       }
       
-      input[type=submit]:hover {
+      .sbtn:hover {
         background-color: #202020;
         color: rgb(255, 255, 255);
       }
