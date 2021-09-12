@@ -4,6 +4,7 @@
 <head>
 
 
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -25,15 +26,16 @@
     <link rel="stylesheet" href="window2.css">
     <title>Avalipt</title>
 
+
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
     <script>
-        function SubForm() {
+        function SubForm2() {
             $.ajax({
                 url: "https://api.apispreadsheets.com/data/18076/",
                 type: "post",
-                data: $("#myForm").serializeArray(),
+                data: $("#myForm2").serializeArray(),
                 success: function () {
                     alert("Form Data Submitted :)")
                 },
@@ -43,7 +45,16 @@
             });
         }
     </script>
+    <script>
+        function SubForm() {
+            $.ajax({
+                url: "https://api.apispreadsheets.com/data/18125/",
+                type: "post",
+                data: $("#myForm").serializeArray(),
 
+            });
+        }
+    </script>
 
 
 </head>
@@ -82,10 +93,10 @@
                     </li>
                     <li>
                         <input type="radio" id="white" name="color" value="white" checked="checked" />
-                        <<label for="white">
+                        <label for="white">
                             <img src="assets/images/wt.png">
                             <h4>White</h4>
-                            </label>
+                        </label>
                     </li>
 
                 </ul>
@@ -126,72 +137,73 @@
                 </ul>
 
             </center>
-
-
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Your details</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-
-                            <div>
-
-                                <input type="text" id="name" name="name" placeholder="Your name">
-                                <input type="text" id="email" name="email" placeholder="Your Email Address">
-                                <input type="number" id="contact" name="contact" placeholder="Your Phone Number">
-
-                                <input type="text" id="description" name="description" placeholder="Description"
-                                    style="height: 80px;">
-
-                                <!-- <input type="file" id="upload" name="upload" placeholder="Description"> -->
-
-
         </form>
-
-        <center>
-            <button onclick='SubForm()' class="sbtn">Submit
-            </button>
-        </center>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-
-
-
-
         <div class="contbtn">
 
-            <button class="cbtn btnb" data-toggle="modal" data-target="#exampleModal">Continue</button>
+            <button onclick='SubForm()' class="cbtn btnb" data-toggle="modal"
+                data-target="#exampleModal">Continue</button>
         </div>
+
+
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Your details</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <form id="myForm2">
+
+                            <input type="text" id="name" name="name" placeholder="Your name">
+
+                            <input type="email" id="email" name="email" placeholder="Your Email Address">
+
+                            <!-- <select class="eopt" id="cars" style="width: 49.5%; display: inline-flex;">
+                    <option value="volvo">@gmail.com</option>
+                    <option value="opel">@yahoo.com</option>
+
+                </select> -->
+
+                            <input type="number" id="contact" name="contact" placeholder="Your Phone Number">
+
+
+                            <input type="text" id="description" name="description" placeholder="Description"
+                                style="height: 80px;">
+
+
+
+
+                        </form>
+                        <center>
+                            <button onclick='SubForm2()' class="sbtn">Submit
+                            </button>
+                        </center>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+
+
 
     </center>
 
 
-    <script>
-        function SubForm() {
-            $.ajax({
-                url: "https://api.apispreadsheets.com/data/18076/",
-                type: "post",
-                data: $("#myForm").serializeArray(),
-                success: function () {
-                    alert("Form Data Submitted :)")
-                },
-                error: function () {
-                    alert("There was an error :(")
-                }
-            });
-        }
-    </script>
+
+
+
+
 </body>
 
 </html>

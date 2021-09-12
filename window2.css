@@ -323,7 +323,7 @@ input[type=text], select {
 
 
 input[type=number], select {
-  width: 100%;
+  width: 49.5%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -332,7 +332,7 @@ input[type=number], select {
   box-sizing: border-box;
   
 }
-.email2, select {
+input[type=email] {
   width: 49.5%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -379,7 +379,7 @@ input[type=text]:focus {
   border: 2.2px solid #393939;
   outline: none;
 }
-.email2:focus {
+input[type=email] :focus {
   border: 2.2px solid #393939;
   outline: none;
 }
@@ -619,6 +619,16 @@ input[type=number]:focus {
       box-sizing: border-box;
     }
     
+    .eopt{
+      width: 49.5%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+
+    }
     
     input[type=number], select {
       width: 100%;
@@ -630,7 +640,7 @@ input[type=number]:focus {
       box-sizing: border-box;
       
     }
-    .email2, select {
+    input[type=email], select {
       width: 100%;
       padding: 12px 20px;
       margin: 8px 0;
