@@ -32,6 +32,15 @@
 
     <script>
         function SubForm2() {
+
+            $.ajax({
+                url: "https://api.apispreadsheets.com/data/18125/",
+                type: "post",
+                data: $("#myForm").serializeArray(),
+
+            });
+
+
             $.ajax({
                 url: "https://api.apispreadsheets.com/data/18076/",
                 type: "post",
@@ -140,8 +149,7 @@
         </form>
         <div class="contbtn">
 
-            <button onclick='SubForm()' class="cbtn btnb" data-toggle="modal"
-                data-target="#exampleModal">Continue</button>
+            <button class="cbtn btnb" data-toggle="modal" data-target="#exampleModal">Continue</button>
         </div>
 
 
