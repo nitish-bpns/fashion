@@ -9,144 +9,11 @@ body {
        border: none;
        cursor: pointer;
    }
-/*
-  .card {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
 
-    margin: 0 3% 1% 3%;
-    border-radius: 15px;
-    outline: cornflowerblue;
-    border: 1.5px solid #0F1C3F !important;
-  }
-   
-  .card img{
-    height: 310px;
-    width: 260px;
-    outline: cornflowerblue;
-    margin-left: 10%;
-  }
-  
-  .cardsty {margin: 0 -5px;
-  outline: cornflowerblue;
-  }
-
-  .cardsty:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
- .sbtn{
-     border: none;
-     padding: 5px 20px 3px 20px;
-     color: black;
-     background-color: white;
-     font-size: 14px;
-     border-radius: 5px;
-     cursor: pointer;
- }
-
- .circ {
-  border: 0.1em solid #0F1C3F !important;
-  border-radius: 50%;
-  height: 3.5em;
-  width: 3.5em;
-  font-size: 16px;
-  font-weight:500;
-  display: inline-block;
-  margin: 0 3% 0 3%;
-}
-
-
-.circ2 {
-  border: 1.5px solid #0F1C3F !important;
-  border-radius: 50%; 
-  height: 3.5em;
-  width: 3.5em;
-  font-size: 16px;
-  font-weight:500;
-  display: inline-block;
-  margin: 0 3% 0 0;
-  background-color: white !important;
- 
-}
-
-.circ2:focus {
-  border: 1.5px solid #0F1C3F !important;
-  border-radius: 50%; 
-  height: 3.5em;
-  width: 3.5em;
-  font-size: 16px;
-  font-weight:500;
-  display: inline-block;
-  margin: 0 3% 0 0;
-  background-color: rgb(221, 221, 221) !important;
-outline: none;
-}
-
-.btnc1:focus{
-  background-color: #555555;
-}
-
-.card:focus{
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-
-  margin: 0 3% 1% 3%;
-  border-radius: 15px;
-  outline: cornflowerblue;
-  border: 1.5px solid #0F1C3F !important;
-  background-color: rgb(221, 221, 221) !important;
-  outline: none;
-}
-
-
-.contbtn{
-  display: inline-block;
-  margin-left: 0em;
-  margin-top: 0em;
-  margin-bottom: 0mm;
-}
-
-.cbtn {
-  border: none;
-  color: white;
-  padding: 12px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-.btnb {
-  background-color: white;
-  color: black;
-  border: 2px solid #555555;
-}
-
-.btnb:hover {
-  background-color: #252525;
-  color: white;
-}
-
-.cbtn:focus {
-
-  outline: none;
-  background-color: #252525;
-  color: white;
-
-}
-*/
-
-  /*color*/
 
   .jkcolor {
     list-style-type: none;
-    margin: 25px 0 0 0;
+    margin: 3% 0 0 0;
     padding: 0 10px;
     width: auto;
     height: auto;
@@ -156,9 +23,9 @@ outline: none;
 
 .jkcolor li {
     float: left;
-    margin: 0 4% 0 4%;
-    width: 25%;
-    height: 380px;
+    margin: 0 0 2% 3.5%;
+    width: 20%;
+    height: 203px;
     position: relative;
     border: 2px solid black;
 }
@@ -202,10 +69,10 @@ outline: none;
 
 
 
-/*size*/
+
 .jksize {
     list-style-type: none;
-    margin: 30% 0 0 26%;
+    margin: 1% 0 0 29%;
     padding: 0 10px;
     width: auto;
     height: auto;
@@ -260,7 +127,7 @@ outline: none;
     background: #DDD;
 }
 
-/*continue button*/
+
 .contbtn {
     display: inline-block;
     margin-left: -28%;
@@ -359,7 +226,7 @@ input[type=file], select {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   padding: 14px 20px;
-  margin: 8px 0;
+  margin: 3% 0;
   border: 2.2px solid black;
   border-radius: 5px;
   cursor: pointer;
@@ -393,44 +260,6 @@ input[type=number]:focus {
 
 
 
-@media screen and (max-width: 1200px) {
-  .contbtn {
-      display: inline-block;
-      margin-left: -25%;
-      margin-top: -2px;
-      margin-bottom: 0mm;
-  }
-
-  /*size*/
-  .jksize {
-      list-style-type: none;
-      margin: 35% 0 0 26%;
-      padding: 0 10px;
-      width: auto;
-      height: auto;
-
-  }
-
-  .jksize li {
-      float: left;
-      margin: 0 3.5% 0 0;
-      width: 3.5em;
-      height: 3.5em;
-      border-radius: 50%;
-      position: relative;
-      border: 2px solid black;
-  }
-
-  .jkcolor li {
-      float: left;
-      margin: 0 4% 0 4%;
-      width: 25%;
-      height: 330px;
-      position: relative;
-      border: 2px solid black;
-  }
-}
-
 @media screen and (max-width: 900px) {
   .contbtn {
       display: inline-block;
@@ -439,34 +268,44 @@ input[type=number]:focus {
       margin-bottom: 0mm;
   }
 
-  /*size*/
-  .jksize {
-      list-style-type: none;
-      margin: 35% 0 0 20%;
-      padding: 0 10px;
-      width: auto;
-      height: auto;
+  
+  .jkcolor {
+    list-style-type: none;
+    margin: 3% 0 0 0;
+    padding: 0 10px;
+    width: auto;
+    height: auto;
 
-  }
 
-  .jksize li {
-      float: left;
-      margin: 0 3.5% 0 0;
-      width: 3.5em;
-      height: 3.5em;
-      border-radius: 50%;
-      position: relative;
-      border: 2px solid black;
-  }
+}
 
-  .jkcolor li {
-      float: left;
-      margin: 0 4% 0 4%;
-      width: 25%;
-      height: 290px;
-      position: relative;
-      border: 2px solid black;
-  }
+.jkcolor li {
+    float: left;
+    margin: 0 0 2% 3.5%;
+    width: 20%;
+    height: 155px;
+    position: relative;
+    border: 2px solid black;
+}
+
+.jksize {
+  list-style-type: none;
+  margin: 1% 0 0 20%;
+  padding: 0 10px;
+  width: auto;
+  height: auto;
+
+}
+
+.jksize li {
+  float: left;
+  margin: 0 3.5% 0 0;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  position: relative;
+  border: 2px solid black;
+}
 }
 
 
@@ -475,7 +314,7 @@ input[type=number]:focus {
         float: left;
         width: 40%;
         padding: 0 10px;
-        /* background-color: grey; */
+
         margin: 0 3% 1% 3%;
         border-radius: 15px;
       }
@@ -490,34 +329,44 @@ input[type=number]:focus {
       margin-bottom: 0mm;
   }
 
-  /*size*/
-  .jksize {
-      list-style-type: none;
-      margin: 65% 0 0 16%;
-      padding: 0 10px;
-      width: auto;
-      height: auto;
 
-  }
+  .jkcolor {
+    list-style-type: none;
+    margin: 3% 0 0 0;
+    padding: 0 10px;
+    width: auto;
+    height: auto;
 
-  .jksize li {
-      float: left;
-      margin: 0 3.5% 0 0;
-      width: 3.5em;
-      height: 3.5em;
-      border-radius: 50%;
-      position: relative;
-      border: 2px solid black;
-  }
 
-  .jkcolor li {
-      float: left;
-      margin: 0 4% 2% 15%;
-      width: 70%;
-      height: 330px;
-      position: relative;
-      border: 2px solid black;
-  }
+}
+
+.jkcolor li {
+    float: left;
+    margin: 0 0 2% 3.5%;
+    width: 20%;
+    height: 85px;
+    position: relative;
+    border: 2px solid black;
+}
+
+.jksize {
+  list-style-type: none;
+  margin: 1% 0 0 15%;
+  padding: 0 10px;
+  width: auto;
+  height: auto;
+
+}
+
+.jksize li {
+  float: left;
+  margin: 0 3.5% 0 0;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 50%;
+  position: relative;
+  border: 2px solid black;
+}
 }
 
  @media screen and (max-width: 464px){
@@ -525,47 +374,10 @@ input[type=number]:focus {
 
 
 
-  
-  /*
-  .card {
-        float: left;
-        width: 80%;
-        padding: 0 10px;
-  
-        margin: 0 5% 5% 8%;
-        border-radius: 15px;
-
-      }
-
-      .card:focus {
-        float: left;
-        width: 80%;
-        padding: 0 10px;
-        margin: 0 5% 5% 8%;
-        border-radius: 15px;
-        border: 1.5px solid #0F1C3F !important;
-        background-color: rgb(221, 221, 221) !important;
-
-      }
-
-      .circ {
-        border: 0.1em solid #0F1C3F !important;
-        border-radius: 50%;
-        height: 3.5em;
-        width: 3.5em;
-        font-size: 16px;
-        font-weight:500;
-        display: inline-block;
-        margin: 0 0.8% 0 0.8%;
-      }
-      
-      .contbtn{
-        display: inline-block;
-        margin-left: 0em;
-        margin-top: 1em;
-        margin-bottom: 2em;
-      }
-      */
+p{
+    margin-top: -10%;
+  }
+ 
 
       .contbtn {
         display: inline-block;
@@ -574,10 +386,10 @@ input[type=number]:focus {
         margin-bottom: 0mm;
     }
 
-    /*size*/
+
     .jksize {
         list-style-type: none;
-        margin: 65% 0 0 10%;
+        margin: 8% 0 0 10%;
         padding: 0 10px;
         width: 90%;
         height: auto;
@@ -586,19 +398,35 @@ input[type=number]:focus {
 
     .jksize li {
         float: left;
-        margin: 0 3.5% 0 0;
-        width: 3em;
-        height: 3em;
+        margin: 0 3% 0 0;
+        width: 2.5em;
+        height: 2.5em;
         border-radius: 50%;
         position: relative;
         border: 2px solid black;
     }
-
+    .jksize label {
+      padding: 0px;
+      cursor: pointer;
+      z-index: 90;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+    .jkcolor {
+      list-style-type: none;
+      margin: 3% 0 0 0;
+      padding: 0 10px;
+      width: auto;
+      height: auto;
+  
+  
+  }
     .jkcolor li {
         float: left;
         margin: 0 4% 4% 8%;
-        width: 84%;
-        height: 330px;
+        width: 37%;
+        height: 134px;
         position: relative;
         border: 2px solid black;
     }
@@ -656,11 +484,12 @@ input[type=number]:focus {
       width: 50%;
       background-color: #ffffff;
       color: rgb(0, 0, 0);
-      padding: 14px 20px;
-      margin: 8px 0;
+      padding: 8px 15px;
+      margin: 10% 0;
       border: 2.2px solid black;
       border-radius: 5px;
       cursor: pointer;
+  
     }
     
     .sbtn:hover {
@@ -681,51 +510,6 @@ input[type=number]:focus {
       outline: none;
     }
 
-
-
-
-
-
-
 }
 
-@media screen and (max-width: 353px) {
-    .contbtn {
-        display: inline-block;
-        margin-left: 0;
-        margin-top: 3%;
-        margin-bottom: 0mm;
-    }
 
-    /*size*/
-    .jksize {
-        list-style-type: none;
-        margin: 65% 0 0 5%;
-        padding: 0 10px;
-        width: 90%;
-        height: auto;
-
-    }
-
-    .jksize li {
-        float: left;
-        margin: 0 2.5% 0 0;
-        width: 3em;
-        height: 3em;
-        border-radius: 50%;
-        position: relative;
-        border: 2px solid black;
-    }
-
-    .jkcolor li {
-        float: left;
-        margin: 0 4% 4% 8%;
-        width: 84%;
-        height: 330px;
-        position: relative;
-        border: 2px solid black;
-    }
-
-
-
- }

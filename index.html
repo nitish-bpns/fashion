@@ -31,20 +31,12 @@
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
 
     <script>
-        function SubForm2() {
+        function SubForm() {
 
             $.ajax({
                 url: "https://api.apispreadsheets.com/data/18125/",
                 type: "post",
                 data: $("#myForm").serializeArray(),
-
-            });
-
-
-            $.ajax({
-                url: "https://api.apispreadsheets.com/data/18076/",
-                type: "post",
-                data: $("#myForm2").serializeArray(),
                 success: function () {
                     alert("Form Data Submitted :)")
                 },
@@ -54,17 +46,6 @@
             });
         }
     </script>
-    <script>
-        function SubForm() {
-            $.ajax({
-                url: "https://api.apispreadsheets.com/data/18125/",
-                type: "post",
-                data: $("#myForm").serializeArray(),
-
-            });
-        }
-    </script>
-
 
 </head>
 
@@ -75,137 +56,124 @@
 
     <br>
 
-    <center>
-        <p
-            style="color: rgb(0, 0, 0);font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-align: center; margin:0  5% 0 5% ; ">
-            Choose the color and size of jackets
-        </p>
-        <br>
 
-        <form id="myForm">
-
-            <center>
-                <ul class="jkcolor">
-                    <li>
-                        <input type="radio" id="black" name="color" value="black" />
-                        <label for="black">
-                            <img src="assets/images/bj.png">
-                            <h4>Black</h4>
-                        </label>
-                    </li>
-                    <li>
-                        <input type="radio" id="blue" name="color" value="blue" checked="checked" />
-                        <label for="blue">
-                            <img src="assets/images/bl.png">
-                            <h4>Blue</h4>
-                        </label>
-                    </li>
-                    <li>
-                        <input type="radio" id="white" name="color" value="white" />
-                        <label for="white">
-                            <img src="assets/images/wt.png">
-                            <h4>White</h4>
-                        </label>
-                    </li>
-
-                </ul>
-            </center>
-            <br>
-            <center>
-                <ul class="jksize">
-                    <li>
-                        <input type="radio" id="s" name="size" value="S" />
-                        <label for="s">
-                            <p style="margin-top: 20%;font-weight: 600;">S</p>
-                        </label>
-                    </li>
-                    <li>
-                        <input type="radio" id="m" name="size" value="M" />
-                        <label for="m">
-                            <p style="margin-top: 20%;font-weight: 600;">M</p>
-                        </label>
-                    </li>
-                    <li>
-                        <input type="radio" id="l" name="size" value="L" checked="checked" />
-                        <label for="l">
-                            <p style="margin-top: 20%;font-weight: 600;">L</p>
-                        </label>
-                    </li>
-                    <li>
-                        <input type="radio" id="xl" name="size" value="XL" />
-                        <label for="xl">
-                            <p style="margin-top: 20%;font-weight: 600;">XL</p>
-                        </label>
-                    </li>
-                    <li>
-                        <input type="radio" id="xxl" name="size" value="XXL" />
-                        <label for="xxl">
-                            <p style="margin-top: 20%;font-weight: 600;">XXL</p>
-                        </label>
-                    </li>
-                </ul>
-
-            </center>
-        </form>
-        <div class="contbtn">
-
-            <button class="cbtn btnb" data-toggle="modal" data-target="#exampleModal">Continue</button>
-        </div>
+    <button class="cbtn btnb" data-toggle="modal" data-target="#exampleModal">Continue</button>
 
 
 
 
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Your details</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-
-                        <form id="myForm2">
-
-                            <input type="text" id="name" name="name" placeholder="Your name">
-
-                            <input type="email" id="email" name="email" placeholder="Your Email Address">
-
-                            <!-- <select class="eopt" id="cars" style="width: 49.5%; display: inline-flex;">
-                    <option value="volvo">@gmail.com</option>
-                    <option value="opel">@yahoo.com</option>
-
-                </select> -->
-
-                            <input type="number" id="contact" name="contact" placeholder="Your Phone Number">
 
 
-                            <input type="text" id="description" name="description" placeholder="Description"
-                                style="height: 80px;">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Your details</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="myForm">
+
+                        <input type="text" id="name" name="name" placeholder="Your name">
+
+                        <input type="email" id="email" name="email" placeholder="Your Email Address">
+
+
+                        <input type="number" id="contact" name="contact" placeholder="Your Phone Number">
 
 
 
 
-                        </form>
                         <center>
-                            <button onclick='SubForm2()' class="sbtn">Submit
-                            </button>
+                            <ul class="jkcolor">
+                                <li>
+                                    <input type="radio" id="black" name="color" value="black" />
+                                    <label for="black">
+                                        <img src="assets/images/bj.png">
+                                        <p>Black</p>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="blue" name="color" value="blue" checked="checked" />
+                                    <label for="blue">
+                                        <img src="assets/images/bl.png">
+                                        <p>Blue</p>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="white" name="color" value="white" />
+                                    <label for="white">
+                                        <img src="assets/images/wt.png">
+                                        <p>White</p>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="charcoal" name="color" value="charcoal" />
+                                    <label for="charcoal">
+                                        <img src="assets/images/ck.png">
+                                        <p>Charcoal</p>
+                                    </label>
+                                </li>
+
+                            </ul>
+
+                            <ul class="jksize">
+                                <li>
+                                    <input type="radio" id="s" name="size" value="S" />
+                                    <label for="s">
+                                        <p style="margin-top: 20%;font-weight: 600;">S</p>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="m" name="size" value="M" />
+                                    <label for="m">
+                                        <p style="margin-top: 20%;font-weight: 600;">M</p>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="l" name="size" value="L" checked="checked" />
+                                    <label for="l">
+                                        <p style="margin-top: 20%;font-weight: 600;">L</p>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="xl" name="size" value="XL" />
+                                    <label for="xl">
+                                        <p style="margin-top: 20%;font-weight: 600;">XL</p>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="xxl" name="size" value="XXL" />
+                                    <label for="xxl">
+                                        <p style="margin-top: 20%;font-weight: 600;">XXL</p>
+                                    </label>
+                                </li>
+                            </ul>
                         </center>
 
-                    </div>
+
+
+                    </form>
+                    <br>
+                    <center>
+                        <button onclick='SubForm()' class="sbtn" data-dismiss="modal">Submit
+                        </button>
+                    </center>
+
                 </div>
             </div>
         </div>
-        </div>
+    </div>
+    </div>
 
 
 
 
 
-
-    </center>
 
 
 
